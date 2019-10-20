@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+.left-header{
+  height: 730px;
+  width: 250px;
+  padding: 80px 50px;
+  &__lists{
+    margin-top: 25px;
+    .list{
+      padding: 30px 0;
+      position: relative;
+      .select-box{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        border-bottom: 1px solid $line-color;
+        border-radius: 0;
+        width: 120px;
+        height: 45px;
+        background-color:white;
+        cursor: pointer;
+      }
+      select:-ms-expand{
+        display: none;
+      }
+        .option{
+          position: absolute;
+          display: table;
+          font-weight: 200px;
+        }
+    }
+    .list:after{
+      position: absolute;
+      content: "▼";
+      font-size: 10px;
+      pointer-events: none;
+      color: $line-color;
+      z-index: 1;
+      right: 22px;
+      bottom: 39px;
+    }
+  }
+  }
+

@@ -1,0 +1,21 @@
+.left-header
+  .left-header__lists
+  
+    .list
+      %select{name: "category",id: "category", class: "select-box", onchange: "location.href=value"}
+        %option{value: ""}Category
+        %option{value: "#"}Outer
+        %option{value: "#"}Tops
+        %option{value: "#"}Bottoms
+        %option{value: "#"}Shoes
+        %option{value: "#"}Goods
+    .list
+      %select{name: "color", id: "color", class: "select-box", onchange: "location.href=value"}
+        %option{value: ""}Color
+        %option{value: "#", style: "background:black"}● Black
+        %option{value: "#", style: "color:whte"}● White
+        %option{value: "#"}● Navy
+        %option{value: "#"}● Red
+        %option{value: "#"}● Blue
+        %option{value: "#"}● Green
+        %option{value: "#"}● Other
