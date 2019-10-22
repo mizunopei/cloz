@@ -1,0 +1,74 @@
+.left-header
+  .left-header__lists
+  
+    %ul.nav
+      %li
+        .select Category
+        %ul#option
+          %li
+            %a{href: "#"}
+            ■ Outer
+          %li
+            %a{href: "#"}
+            ■ Tops
+          %li
+            %a{href: "#"}
+            ■ Bottoms
+          %li
+            %a{href: "#"}
+            ■ Shoes
+          %li
+            %a{href: "#"}
+            ■ Goods
+
+    %ul.nav
+      %li
+        .select Color
+        %ul#option
+          %li
+            %a{href: "#"}
+            %span{style:"color:black"}>● 
+            Black
+          %li
+            %a{href: "#"}
+            %span{style:"color:#f5f5f5"}>● 
+            White
+          %li
+            %a{href: "#"}
+            %span{style:"color:navy"}>● 
+            Navy
+          %li
+            %a{href: "#"}
+            %span{style:"color:red"}>●
+            Red
+          %li
+            %a{href: "#"}
+            %span{style:"color:blue"}>●
+            Blue
+          %li
+            %a{href: "#"}
+            %span{style:"color:green"}>●
+            Green
+          %li
+            %a{href: "#"}
+            %span{style:"color:lightgray"}>●
+            Other
+
+
+    -#   %select{name: "category",id: "category", class: "select-box", onchange: "location.href=value"}
+    -#     %option{value: ""}Category
+    -#     %option{value: "#"}Outer
+    -#     %option{value: "#"}Tops
+    -#     %option{value: "#"}Bottoms
+    -#     %option{value: "#"}Shoes
+    -#     %option{value: "#"}Goods
+    -# .list
+    -#   %select{name: "color", id: "color", class: "select-box", onchange: "location.href=value"}
+    -#     %option{class: "option", value: ""}Color
+    -#     %option{value: "#", style: "background:black"}● Black
+    -#     %option{value: "#", style: "color:whte"}● White
+    -#     %option{value: "#"}● Navy
+    -#     %option{value: "#"}● Red
+    -#     %option{value: "#"}● Blue
+    -#     %option{value: "#"}● Green
+    -#     %option{value: "#"}● Other

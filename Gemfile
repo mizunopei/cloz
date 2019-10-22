@@ -34,10 +34,10 @@ gem 'devise-i18n' #日本語化devise
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
-gem "kaminari" #ページネーション 
+gem 'kaminari' #ページネーション 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'jquery-rails' 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
