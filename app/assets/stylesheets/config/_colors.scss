@@ -1,2 +1,8 @@
-$line-color: rgba(0,0,0, 0.3);
-$black: blacK;
+$line-color: rgba(0, 0, 0, 0.3);
+$black: #1f1f1f;
+
+@mixin border {
+  border-bottom: 2.5px solid;
+  border-image: linear-gradient(to right,  #eacda3 0%,  #9a8478 100%);
+  border-image-slice: 1;
+}
