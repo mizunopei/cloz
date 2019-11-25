@@ -33,6 +33,9 @@ gem 'devise'
 gem 'devise-i18n' #日本語化devise
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem 'carrierwave'
+gem "mini_magick"
+gem "font-awesome-rails"
 
 gem 'kaminari' #ページネーション 
 # Use Capistrano for deployment
