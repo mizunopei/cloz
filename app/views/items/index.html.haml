@@ -1,68 +1,16 @@
-.wrapper
-  
-
+.wrapper 
   = render "shared/left-bar"
-
   .main
-    .main__title   -- Cloz --
-    .items
-      .row
-        .item
-          .item__image
-          .item__name
-            パーカー
-
-        .item
-          .item__image
-          .item__name
-            デニム
-        
-        .item
-          .item__image
-          .item__name
-            靴
-        
-        .item
-          .item__image
-          .item__name
-            靴
-      .row
-        .item
-          .item__image
-          .item__name
-            パーカー
-
-        .item
-          .item__image
-          .item__name
-            デニム
-        
-        .item
-          .item__image
-          .item__name
-            靴
-        
-        .item
-          .item__image
-          .item__name
-            靴
-      .row
-        .item
-          .item__image
-          .item__name
-            パーカー
-
-        .item
-          .item__image
-          .item__name
-            デニム
-        
-        .item
-          .item__image
-          .item__name
-            靴
-        
-        .item
-          .item__image
-          .item__name
-            靴
+    .main__title -- Cloz --
+    .user__name
+      = current_user.name
+      さんのクローゼット
+      = fa_icon "arrow-down"
+    .main__content
+      .items
+        - @items.each do |item|
+          .item
+            .item__image
+              %img{src: "#{item.image}"}
+            .item__name
+              = item.name

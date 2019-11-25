@@ -1,6 +1,5 @@
 .left-header
-  .left-header__lists
-  
+  .left-header__lists 
     %ul.nav
       %li
         .select Category
@@ -54,21 +53,17 @@
             %span{style:"color:lightgray"}>●
             Other
 
-
-    -#   %select{name: "category",id: "category", class: "select-box", onchange: "location.href=value"}
-    -#     %option{value: ""}Category
-    -#     %option{value: "#"}Outer
-    -#     %option{value: "#"}Tops
-    -#     %option{value: "#"}Bottoms
-    -#     %option{value: "#"}Shoes
-    -#     %option{value: "#"}Goods
-    -# .list
-    -#   %select{name: "color", id: "color", class: "select-box", onchange: "location.href=value"}
-    -#     %option{class: "option", value: ""}Color
-    -#     %option{value: "#", style: "background:black"}● Black
-    -#     %option{value: "#", style: "color:whte"}● White
-    -#     %option{value: "#"}● Navy
-    -#     %option{value: "#"}● Red
-    -#     %option{value: "#"}● Blue
-    -#     %option{value: "#"}● Green
-    -#     %option{value: "#"}● Other
+    .icon
+      = link_to  new_item_path do
+        = fa_icon "camera"
+        post!
+    - if user_signed_in?
+      .icon
+        = link_to destroy_user_session_path, method: :delete do
+          = fa_icon "sign-out"
+          sign-out
+    - else
+      .icon
+        = link_to  new_user_session_path do
+          = fa_icon "sign-in"
+          sign-in
