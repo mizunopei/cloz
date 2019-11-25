@@ -19,7 +19,7 @@
   .select{
     color: $black;
     font-family: $sub-font;
-    @include border;
+    @include border-line;
     font-size: X-large;
     font-weight: bold;
   }
@@ -38,42 +38,20 @@
     right: 0;
     bottom: 1px;
     color: #9a8478;
-  }
-  // &__lists{
-  //   margin-top: 25px;
-  //   .list{
-  //     padding: 30px 0;
-  //     position: relative;
-  //     .select-box{
-  //       -webkit-appearance: none;
-  //       -moz-appearance: none;
-  //       appearance: none;
-  //       border: none;
-  //       border-bottom: 1px solid $line-color;
-  //       border-radius: 0;
-  //       width: 120px;
-  //       height: 45px;
-  //       background-color:white;
-  //       cursor: pointer;
-  //     }
-  //     select:-ms-expand{
-  //       display: none;
-  //     }
-  //     %option{
-  //       -webkit-appearance: none;
-  //       -moz-appearance: none;
-  //     }
-  //   }
-  //   .list:after{
-  //     position: absolute;
-  //     content: "▼";
-  //     font-size: 10px;
-  //     pointer-events: none;
-  //     color: $line-color;
-  //     z-index: 1;
-  //     right: 22px;
-  //     bottom: 39px;
-  //   }
+    }
+  .icon{
+    font-family: $sub-font;
+    @include border-line;
+    font-size: X-large;
+    font-weight: bold;
+    margin: 40px 0;
+    .fa{
+      color: $black;
+    }
+    a{
+      color: $black;
+    }
+    }
   }
 
 

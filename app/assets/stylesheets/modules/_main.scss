@@ -1,41 +1,53 @@
 .main{
-  width: calc(100vw - 250px);
-  height: 700px;
-  margin: 30px;
-  &__title{
-    font-family: 'Sriracha', cursive;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 8px;
-    letter-spacing: 10px;
-    color: $black;
-  }
+  height: 100%;
+  width: calc(100% - 250px);
+&__title{
+  font-family: 'Sriracha', cursive;
+  font-size: 55px;
+  text-align: center;
+  padding-top: 10px;
+  letter-spacing: 10px;
+  color: $black;
+  width: 90%;
+}
+.user__name{
+ text-align: right;
+ padding-right: 100px;
+ font-size: 18px;
+ font-family: $sub-font;
+ color: $black;
+}
+&__content{
+  height: 90%;
+  width: 98%;
+}
   .items{
-    height: 575px;
-    width: auto;
     background-color:#9e9e9e1a;
-    overflow: scroll;
-  }
-  .row {
     display: flex;
-    padding: 5px;
-  }
+    flex-wrap: wrap;
+    height: 600px;
+    overflow: scroll;
   .item{
-    height: 260px;
-    width: 260px;
-    background-color:gray;
-    margin: 0 auto;
+    height: 220px;
+    width: 200px;
+    background-color:#9e9e9e1a;
+    margin: 20px 42px;
+    cursor: pointer;
     &__image{
-      margin: 10px auto 0 auto;
-
-      height: 220px;
-      width: 220px;
+      height: 180px;
+      width: 180px;
       background-color: white;
+      margin: 7px auto;
+      img{
+        height: 100%;
+        width: 100%;
+       }
     }
     &__name{
       font-family: $sub-font;
+      cursor: pointer;
       text-align: center;
-      font-size: 22px;
-    }
+     }
   }
+}
 }
