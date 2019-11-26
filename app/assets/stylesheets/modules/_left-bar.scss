@@ -2,14 +2,15 @@
   box-sizing: border-box;
 }
 .left-header{
-  height: 730px;
+  height: 750px;
   width: 250px;
   padding: 80px 50px;
   display: flex;
+  position: relative;
   &__lists{
     width: 120px;
     height: 600px;
-    padding-top: 115px;
+    padding-top: 100px;
   }
   .nav {
     margin-bottom: 70px;
@@ -51,6 +52,17 @@
     a{
       color: $black;
     }
+    }
+    .trash-box{
+    font-family: $sub-font;
+    font-size: 60px;
+    left: 87px;
+    bottom: 20px;
+    // bottom: 0;
+    position: absolute;
+      .fa{
+        color: $black;
+      }
     }
   }
 
