@@ -57,6 +57,10 @@
       = link_to  new_item_path do
         = fa_icon "camera"
         post !
+    .icon
+      = fa_icon "user"
+      my-page
+
     - if user_signed_in?
       .icon
         = link_to destroy_user_session_path, method: :delete do
@@ -67,6 +71,6 @@
         = link_to  new_user_session_path do
           = fa_icon "sign-in"
           sign-in
-    
+:
     .trash-box
       = fa_icon "trash"

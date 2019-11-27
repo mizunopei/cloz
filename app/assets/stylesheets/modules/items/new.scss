@@ -1,0 +1,50 @@
+.sub__title{
+  font-family: 'Sriracha', cursive;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+  letter-spacing: 15px;
+  a{
+    color: $black;
+  }
+}
+.container{
+  width : 650px;
+  height: 500px;
+  margin: 10px auto;
+  border:  2px dashed white;
+  background-color: white;
+  border-radius: 20px;
+  .form{
+    width: 400px;
+    margin: 50px auto;
+    font-family: $post-font;
+    h3{
+      font-size: 25px;
+      margin: 0 auto 40px auto;
+      text-align: center;
+      color: $black;
+      border-bottom: 2px $line-color solid;
+      font-family: $post-font;
+    }
+    .form-content{
+      display: block;
+      font-family: $sub-font;
+      margin-bottom: 30px;
+      height: 50px;
+      width: 375px;
+      border: 3px solid $line-color;
+    }
+    .button{
+      border-radius: 10px;
+      height: 50px;
+      width: 230px;
+      margin-left: 70px;
+      margin-top:60px;
+      border: 3px solid $line-color;
+      font-family: $post-font;
+      font-size: 20px;
+    }
+  }
+}
+
