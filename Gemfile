@@ -37,6 +37,7 @@ gem 'carrierwave'
 gem "mini_magick"
 gem "font-awesome-rails"
 gem "active_hash"
+gem 'rails-i18n'
 
 gem 'kaminari' #ページネーション 
 # Use Capistrano for deployment
