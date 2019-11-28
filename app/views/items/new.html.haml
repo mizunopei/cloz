@@ -1,11 +1,31 @@
-.sub__title 
+.sub__title
   = link_to root_path do
     \-- Cloz --
 .container
   .form
     %h3 投稿する
     = form_with model: @item, action: "/" do |f|
-      = f.label :"アイテム名"
+      .item-select
+        アイテム名
       = f.text_field :name, placeholder: "アイテム名", class: "form-content"
-      = f.file_field :image, placeholder: "Image URL"
-      = f.submit :"送信!", class:"button"
+      
+      .item-select
+        画像
+      = f.file_field :image, id: "item-image"
+      #preview
+      
+      .item-select
+        カテゴリー
+      = f.collection_select :category_id, Category.all, :id, :name, {prompt: "---"}, class: "select-box"
+      
+      .item-select
+        色
+      = f.collection_select :color_id, Color.all, :id, :name,{prompt: "---"}, class: "select-box"
+
+      .item-select
+        価格
+      = f.text_field :price, class:"item__price"
+      
+      = f.submit :"送信!", class:"button submit__button"
+      = link_to root_path, class: "button back__button" do
+        戻る

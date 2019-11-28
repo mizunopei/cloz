@@ -27,10 +27,14 @@
   #option{
     text-decoration: none;
     list-style: none;
-    color: $black;
     font-size: large;
     display: none;
     font-family: $sub-font;
+    li{
+      a{
+        color: $black;
+      }
+    }
   }
   .nav:after{
     position: absolute;

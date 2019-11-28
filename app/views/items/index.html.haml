@@ -1,7 +1,9 @@
 .wrapper 
   = render "shared/left-bar"
   .main
-    .main__title -- Cloz --
+    .main__title
+      = link_to root_path do
+        \-- Cloz --
     .user__name
       = current_user.name
       さんのクローゼット
