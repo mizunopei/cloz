@@ -5,58 +5,62 @@
         .select Category
         %ul#option
           %li
-            %a{href: "#"}
-            ■ Outer
+            = link_to  "#" do
+              \■ Outer
           %li
-            %a{href: "#"}
-            ■ Tops
+            = link_to  "#" do
+              \■ Tops
           %li
-            %a{href: "#"}
-            ■ Bottoms
+            = link_to  "#" do
+              \■ Bottoms
           %li
-            %a{href: "#"}
-            ■ Shoes
+            = link_to  "#" do
+              \■ Shoes
           %li
-            %a{href: "#"}
-            ■ Goods
+            = link_to  "#" do
+              \■ Goods
 
     %ul.nav
       %li
         .select Color
         %ul#option
           %li
-            %a{href: "#"}
-            %span{style:"color:black"}>● 
-            Black
+            = link_to  "#" do
+              %span{style:"color:black"}>● 
+              Black
           %li
-            %a{href: "#"}
-            %span{style:"color:#f5f5f5"}>● 
-            White
+            = link_to  "#" do
+              %span{style:"color:#f5f5f5"}>● 
+              White
           %li
-            %a{href: "#"}
-            %span{style:"color:navy"}>● 
-            Navy
+            = link_to  "#" do
+              %span{style:"color:navy"}>● 
+              Navy
           %li
-            %a{href: "#"}
-            %span{style:"color:red"}>●
-            Red
+            = link_to  "#" do
+              %span{style:"color:red"}>●
+              Red
           %li
-            %a{href: "#"}
-            %span{style:"color:blue"}>●
-            Blue
+            = link_to  "#" do
+              %span{style:"color:blue"}>●
+              Blue
           %li
-            %a{href: "#"}
-            %span{style:"color:green"}>●
-            Green
+            = link_to  "#" do
+              %span{style:"color:green"}>●
+              Green
           %li
-            %a{href: "#"}
-            %span{style:"color:lightgray"}>●
-            Other
+            = link_to  "#" do
+              %span{style:"color:lightgray"}>●
+              Other
 
     .icon
       = link_to  new_item_path do
         = fa_icon "camera"
         post !
+    .icon
+      = fa_icon "user"
+      my-page
+
     - if user_signed_in?
       .icon
         = link_to destroy_user_session_path, method: :delete do
@@ -67,6 +71,6 @@
         = link_to  new_user_session_path do
           = fa_icon "sign-in"
           sign-in
-    
+
     .trash-box
       = fa_icon "trash"

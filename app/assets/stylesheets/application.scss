@@ -2,7 +2,6 @@
 @import "config/reset";
 @import "config/fonts";
 @import 'font-awesome';
-@import "modules/style";
 @import "modules/left-bar";
-@import "modules/main";
-@import "modules/items";
+@import "modules/items/index";
+@import "modules/items/new";

@@ -2,15 +2,15 @@
   box-sizing: border-box;
 }
 .left-header{
-  height: 750px;
+  height: 770px;
   width: 250px;
-  padding: 80px 50px;
+  padding: 70px 50px;
   display: flex;
   position: relative;
   &__lists{
     width: 120px;
     height: 600px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
   .nav {
     margin-bottom: 70px;
@@ -27,10 +27,14 @@
   #option{
     text-decoration: none;
     list-style: none;
-    color: $black;
     font-size: large;
     display: none;
     font-family: $sub-font;
+    li{
+      a{
+        color: $black;
+      }
+    }
   }
   .nav:after{
     position: absolute;
@@ -57,8 +61,7 @@
     font-family: $sub-font;
     font-size: 60px;
     left: 87px;
-    bottom: 20px;
-    // bottom: 0;
+    bottom: 42px;
     position: absolute;
       .fa{
         color: $black;
