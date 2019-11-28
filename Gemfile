@@ -36,6 +36,7 @@ gem 'devise-i18n' #日本語化devise
 gem 'carrierwave'
 gem "mini_magick"
 gem "font-awesome-rails"
+gem "active_hash"
 
 gem 'kaminari' #ページネーション 
 # Use Capistrano for deployment
