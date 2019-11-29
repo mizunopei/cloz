@@ -5,52 +5,57 @@
         .select Category
         %ul#option
           %li
-            = link_to  "#" do
-              \■ Outer
+            = link_to  outer_items_path do
+              = fa_icon "square-o"
+              Outer
           %li
-            = link_to  "#" do
-              \■ Tops
+            = link_to tops_items_path do
+              = fa_icon "square-o"
+              Tops
           %li
-            = link_to  "#" do
-              \■ Bottoms
+            = link_to bottoms_items_path do
+              = fa_icon "square-o"
+              Bottoms
           %li
-            = link_to  "#" do
-              \■ Shoes
+            = link_to shoes_items_path do
+              = fa_icon "square-o"
+              Shoes
           %li
-            = link_to  "#" do
-              \■ Goods
+            = link_to goods_items_path do
+              = fa_icon "square-o"
+              Goods
 
     %ul.nav
       %li
         .select Color
         %ul#option
-          %li
-            = link_to  "#" do
-              %span{style:"color:black"}>● 
+          %li.color-box
+            = link_to black_items_path do
+              = fa_icon "square"
               Black
-          %li
-            = link_to  "#" do
-              %span{style:"color:#f5f5f5"}>● 
+          %li.color-box.white
+            = link_to white_items_path do
+              = fa_icon "square"
               White
-          %li
-            = link_to  "#" do
-              %span{style:"color:navy"}>● 
+          %li.color-box.navy
+            = link_to navy_items_path do
+              = fa_icon "square"
               Navy
-          %li
-            = link_to  "#" do
-              %span{style:"color:red"}>●
-              Red
-          %li
-            = link_to  "#" do
-              %span{style:"color:blue"}>●
-              Blue
-          %li
-            = link_to  "#" do
-              %span{style:"color:green"}>●
+          %li.color-box.gray
+            = link_to gray_items_path do
+              = fa_icon "square"
+              Gray
+          %li.color-box.beige
+            = link_to beige_items_path do
+              = fa_icon "square"
+              Beige
+          %li.color-box.green
+            = link_to green_items_path do
+              = fa_icon "square"
               Green
-          %li
-            = link_to  "#" do
-              %span{style:"color:lightgray"}>●
+          %li.color-box.rainbow
+            = link_to other_color_items_path do
+              = fa_icon "square-o"  
               Other
 
     .icon
@@ -72,5 +77,5 @@
           = fa_icon "sign-in"
           sign-in
 
-    .trash-box
+    .trash-box 
       = fa_icon "trash"
