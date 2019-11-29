@@ -1,18 +1,5 @@
-.wrapper 
-  = render "shared/left-bar"
-  .main
-    .main__title
-      = link_to root_path do
-        \-- Cloz --
-    .user__name
-      = current_user.name
-      さんのクローゼット
-      = fa_icon "arrow-down"
-    .main__content
-      .items
-        - @items.each do |item|
-          .item
-            .item__image
-              %img{src: "#{item.image}"}
-            .item__name
-              = item.name
+.wrapper
+  = render "shared/header"
+  .flex__box
+    = render "shared/left-bar"
+    = render partial: "shared/item", locals:{items: @items}
