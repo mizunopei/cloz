@@ -3,3 +3,4 @@
   .flex__box
     = render "shared/left-bar"
     = render partial: "shared/item", locals:{items: @black__items}
+  = paginate(@black__items)

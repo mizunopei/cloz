@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
   
   def index
-    @items = Item.where(user_id: current_user.id)
+    @items = Item.where(user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def new
@@ -21,51 +21,51 @@ class ItemsController < ApplicationController
   end
 
   def outer
-    @outer__items = Item.where(category_id: "1", user_id: current_user.id)
+    @outer__items = Item.where(category_id: "1", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def tops
-    @tops__items = Item.where(category_id: "2", user_id: current_user.id)
+    @tops__items = Item.where(category_id: "2", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def bottoms
-    @bottoms__items = Item.where(category_id: "3", user_id: current_user.id)
+    @bottoms__items = Item.where(category_id: "3", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def shoes
-    @shoes__items = Item.where(category_id: "4", user_id: current_user.id)
+    @shoes__items = Item.where(category_id: "4", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def goods
-    @goods__items = Item.where(category_id: "5", user_id: current_user.id)
+    @goods__items = Item.where(category_id: "5", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def black
-    @black__items = Item.where(color_id: "1", user_id: current_user.id)
+    @black__items = Item.where(color_id: "1", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def white
-    @white__items = Item.where(color_id: "2",user_id: current_user.id)
+    @white__items = Item.where(color_id: "2",user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def navy
-    @navy__items = Item.where(color_id: "3", user_id: current_user.id)
+    @navy__items = Item.where(color_id: "3", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def gray
-    @gray__items = Item.where(color_id: "4", user_id: current_user.id)
+    @gray__items = Item.where(color_id: "4", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def beige
-    @beige__items = Item.where(color_id: "5", user_id: current_user.id)
+    @beige__items = Item.where(color_id: "5", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def green
-    @green__items = Item.where(color_id: "6", user_id: current_user.id)
+    @green__items = Item.where(color_id: "6", user_id: current_user.id).page(params[:page]).per(8)
   end
 
   def other_color
-    @other_color__items = Item.where(color_id: "7", user_id: current_user.id)
+    @other_color__items = Item.where(color_id: "7", user_id: current_user.id).page(params[:page]).per(8)
   end
 
 private
