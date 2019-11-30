@@ -1,45 +1,24 @@
 .wrapper{
   width: 100%;
-  height: 100%;
-  display: flex;
+  height: 100vh;
   background-image: image-url("paper.jpg");
 }
-.main{
-  height: 100%;
-  width: calc(100% - 250px);
-&__title{
-  font-family: 'Sriracha', cursive;
-  font-size: 55px;
-  text-align: center;
-  padding-top: 10px;
-  letter-spacing: 10px;
-  width: 90%;
-  a{
-    color: $black;
-  }
+.flex__box{
+  display: flex;
+  width: 100%;
+  // height: 87%;
 }
-.user__name{
- text-align: right;
- padding-right: 100px;
- font-size: 18px;
- font-family: $sub-font;
- color: $black;
-}
-&__content{
-  height: 90%;
-  width: 98%;
-}
+
   .items{
-    background-color:#9e9e9e1a;
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
-    overflow-y: scroll;
+    height: 530px;
+    width: 1150px;
+    // overflow-y: scroll;
   .item{
     height: 220px;
     width: 200px;
-    background-color:#9e9e9e1a;
-    margin: 20px 38px;
+    margin: 20px 30px;
     cursor: pointer;
     &__image{
       height: 180px;
@@ -57,7 +36,6 @@
       text-align: center;
      }
   }
-}
 }
 a{
   text-decoration: none;
