@@ -2,18 +2,16 @@
   box-sizing: border-box;
 }
 .left-header{
-  height: 770px;
   width: 250px;
-  padding: 70px 50px;
-  display: flex;
+  height: 650px;
+  padding: 25px 45px 0 60px;
   position: relative;
   &__lists{
     width: 120px;
-    height: 600px;
-    padding-top: 50px;
+    height: 400px;
   }
   .nav {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     position: relative;
     cursor: pointer;
   }
@@ -33,6 +31,45 @@
     li{
       a{
         color: $black;
+        font-size: 21px;
+      }
+      .fa{
+        color: $black;
+      }
+    }
+    .white{
+        .fa{
+          color:white
+        }
+    }
+    .navy{
+      .fa{
+        color: navy
+      }
+      }
+      .gray{
+        .fa{
+          color: gray
+        }
+      }
+      .beige{
+        .fa{
+          color: #E0D1AD;
+        }
+      }
+      .green{
+        .fa{
+          color: green;
+        }
+      }
+      .rainbow{
+        .fa{
+          color: #dcdcdc;
+          background: -moz-linear-gradient(top, #FFC778, #FFF 30%, #F89174 60%, #748af8);
+          background: -webkit-linear-gradient(top, #FFF, #FFC778 30%, #F89174 60%, #748af8);
+          background: linear-gradient(to bottom, #FFF, #FFC778 30%, #F89174 40%, #748af8);
+          border-radius:20%;
+        }
       }
     }
   }
@@ -49,7 +86,7 @@
     @include border-line;
     font-size: X-large;
     font-weight: bold;
-    margin: 40px 0;
+    margin: 30px 0;
     .fa{
       color: $black;
     }
@@ -59,14 +96,14 @@
     }
     .trash-box{
     font-family: $sub-font;
-    font-size: 60px;
-    left: 87px;
-    bottom: 42px;
+    font-size: 70px;
+    left: 80px;
+    bottom: 50px;
     position: absolute;
       .fa{
         color: $black;
       }
     }
-  }
+  
 
 

@@ -1,0 +1,6 @@
+.wrapper
+  = render "shared/header"
+  .flex__box
+    = render "shared/left-bar"
+    = render partial: "shared/item", locals:{items: @other_color__items}
+  = paginate(@other_color__items)

@@ -1,0 +1,19 @@
+.pagination{
+  text-align: center;
+  font-family: $sub-font;
+  font-size: 20px;
+  position: fixed;
+  right: 45%;
+  bottom: 50px;
+  a{
+    color: $black;
+  }
+  span{
+    padding: 0 5px;
+  }
+  .current{
+    font-weight: bold;
+    border-bottom: 2px solid $black;
+    display: inline-block;
+  }
+}
