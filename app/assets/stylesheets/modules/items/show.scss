@@ -1,0 +1,80 @@
+.show__content{
+  height: 630px;
+  .item__box{
+    width: 50%;
+    height: 480px;
+    margin: 0 auto;
+    .item__detail{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding-top: 60px;
+      .show-item__name{
+        color: white;
+        font-size: 35px;
+        text-align: center;
+        padding-left: 80px;
+        font-family: $sub-font;
+        font-weight: bold;
+        color: $black;
+      }
+      .show-item__image{
+        padding-left: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 55px;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+      table{
+        height: 200px;
+        width: 350px;
+        font-family: $sub-font;
+        font-size: 25px;
+        margin-top: 10px;
+        tr{
+          border: 1px solid $line-color;
+          color: $black;
+        th{
+          padding: 0 20px;
+        }
+        td{
+          border: 1px solid $line-color;
+        }
+      }
+    }
+  }
+  }
+  .button__box{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    .button__row{
+      width: 50%;
+      margin: 0 auto;
+    .item__button{
+      text-align: center;
+      border: 1px solid black;
+      line-height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 auto;
+      a{
+        color: $black;
+        text-align: center;
+        font-family: $sub-font;
+        font-size: 15px;
+      }
+    }
+    .delete__button{
+      margin-left: 70px;
+    }
+    .edit__button{
+      margin-left: 320px;
+    }
+  }
+  }
+}

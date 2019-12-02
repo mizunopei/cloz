@@ -1,0 +1,39 @@
+.wrapper
+  .sub__title
+    = link_to root_path do
+      \-- Cloz --
+  .show__content
+    .item__box
+      .item__detail
+        .show-item__image
+          = image_tag(@item.image_url.to_s)
+        .show-item__name
+          = @item.name
+          %table.item__data
+            %tr
+              %th Category
+              %td
+                = @item.category.name
+            %tr
+              %th Color
+              %td
+                = @item.color.name
+            %tr
+              %th Price
+              %td
+                = "¥" + @item.price.to_s(:delimited)
+
+    .button__box
+      .button__row
+        %button.delete__button.item__button
+          = link_to "#" do
+            Delete
+
+        %button.edit__button.item__button
+          = link_to "#" do
+            Edit
+
+  -# = link_to root_path, class: "button back__button" do
+  -#   Back
+
+
