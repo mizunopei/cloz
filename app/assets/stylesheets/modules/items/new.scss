@@ -1,8 +1,3 @@
-.new{
-  width: 100%;
-  height: 100%;
-  background-image: image-url("paper.jpg");
-}
 .sub__title{
   font-family: 'Sriracha', cursive;
   font-size: 40px;
@@ -24,12 +19,12 @@
     font-family: $post-font;
     .form-content{
       display: block;
-      font-family: $sub-font;
+      font-family: $post-font;
       height: 45px;
       width: 375px;
-      border: 1px solid #9e9e9e;
+      border: 1px solid $line-color;
       padding: 0 20px;
-    font-size: 25px;
+      font-size: 25px;
     }
     .item-select{
       color: $black;
@@ -51,7 +46,7 @@
     #preview{
       width: 152px;
       height: 152px;
-      border:  1px dashed #9e9e9e;
+      border:  1px dashed $line-color;
       margin: 0 auto;
       background-color: $new__box-color;
       img{
@@ -71,6 +66,11 @@
       @include border-line;
       width: 135px;
     }
+    .item-price:after{
+      content: "¥";
+      position: absolute;
+      right: 700px;
+    }
       .item-price__box{
         height: 45px;
         width: 43%;
@@ -79,13 +79,9 @@
         background-color: $new__box-color;
         padding: 0 20px;
         font-size: 20px;
-        border: 1px solid #9e9e9e;
+        border: 1px solid $line-color;
       }
-      .yen{
-        padding-top:26px;
-        padding-left: 6px;
-        font-size: 18px;
-      }
+
     .button{
       border-radius: 5px;
       line-height: 45px;
@@ -118,3 +114,4 @@
 .alert-warning{
   color :red;
 }
+
