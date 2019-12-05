@@ -26,6 +26,7 @@
         img{
           height: 100%;
           width: 100%;
+          background-color: white;
         }
       }
       table{
@@ -54,6 +55,7 @@
     .button__row{
       width: 50%;
       margin: 0 auto;
+      position: relative;
     .item__button{
       text-align: center;
       border: 1px solid black;
@@ -62,6 +64,7 @@
       border-radius: 4px;
       cursor: pointer;
       margin: 0 auto;
+      position: absolute;
       a{
         color: $black;
         text-align: center;
@@ -70,10 +73,10 @@
       }
     }
     .delete__button{
-      margin-left: 70px;
+      left: 0;
     }
     .edit__button{
-      margin-left: 320px;
+      right: 0;
     }
   }
   }

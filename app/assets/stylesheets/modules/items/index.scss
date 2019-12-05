@@ -13,8 +13,12 @@
     display: flex;
     flex-wrap: wrap;
     height: 530px;
-    width: 1150px;
+    // width: 1150px;
+    width: calc(100% - 250px);
     // overflow-y: scroll;
+    a{
+      color: $black;
+    }
   .item{
     height: 220px;
     width: 200px;
