@@ -5,3 +5,16 @@
         %img{src: "#{item.image}"}
       .item__name
         = item.name
+      .item__info
+        category:
+        = item.category.name
+        %br
+        color:
+        = item.color.name
+        %br
+        price:
+        = "¥" + item.price.to_s(:delimited)
+        %br
+        %button.edit__button
+          = link_to edit_item_path(item) do
+            Edit

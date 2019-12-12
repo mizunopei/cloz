@@ -1,7 +1,7 @@
-.header{
+header{
   height: 110px;
   width: 100%;
-&__title{
+  .header__title{
   font-family: 'Sriracha', cursive;
   font-size: 50px;
   text-align: center;
@@ -10,11 +10,11 @@
     color: $black;
   }
 }
-.user__name{
-  text-align: right;
-  padding-right: 200px;
-  font-size: 18px;
-  font-family: $sub-font;
-  color: $black;
-}
+  .user__name{
+    text-align: right;
+    padding-right: 200px;
+    font-size: 18px;
+    font-family: $sub-font;
+    color: $black;
+  }
 }

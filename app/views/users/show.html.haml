@@ -1,0 +1,30 @@
+.wrapper
+  .sub__title
+    = link_to root_path do
+      \-- Cloz --
+  .user__container
+    .user__name
+      = current_user.name + "さんのクローゼット事情"
+    .user__content
+      %table.user__data
+        %tr
+          %th 今月のアイテム数
+          %td
+            = @this_month_items.length
+        %tr
+          %th 今月の合計金額
+          %td
+            = "¥" + @this_month_price.to_s(:delimited)
+            = compare_price(@last_month_price, @this_month_price)
+        %tr
+          %th 合計アイテム数
+          %td
+            = @total_items.length
+        %tr
+          %th 合計金額
+          %td
+            = "¥" + @total_price.to_s(:delimited)
+    
+
+    = link_to root_path, class: "button back__button" do
+      Back
