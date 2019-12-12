@@ -18,8 +18,14 @@ class ItemsController < ApplicationController
     end
   end
 
-  def show
+  def edit
     @item = Item.find(params[:id])
+  end
+
+  def update
+    item = Item.find(params[:id])
+    item.update(items_params) if item.user_id == current_user.id
+    redirect_to :root
   end
 
   def destory
