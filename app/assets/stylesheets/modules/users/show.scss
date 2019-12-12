@@ -1,0 +1,38 @@
+.user__container{
+  width: 600px;
+  margin: 20px auto;
+  .user__name{
+    text-align: center;
+    font-family: $sub-font;
+    font-size: 25px;
+    color: $black;
+  }
+  .user__content{
+    font-family: $sub-font;
+    text-align: center;
+    padding: 30px 0 50px;
+  }
+  .user__data{
+    border: 1px solid $black;
+    margin: 10px auto;
+    color: $black;
+    font-size: 18px;
+    box-shadow: 5px 5px 2px;
+    th,tr{
+      border: 1px dashed $black;
+    }
+    th{
+      padding: 20px;
+    }
+    td{
+      padding: 20px 80px;
+      letter-spacing: 2px;
+    }
+  }
+}
+.increase{
+  color: red;
+}
+.decrease{
+  color: blue;
+}
