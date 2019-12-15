@@ -38,6 +38,8 @@ gem "mini_magick"
 gem "font-awesome-rails"
 gem "active_hash"
 gem 'rails-i18n'
+gem "jquery-ui-rails"
+gem "pry-rails"
 
 gem 'kaminari' #ページネーション 
 # Use Capistrano for deployment
