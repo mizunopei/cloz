@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
 
-  before_action :display_items, execpt:[:new, :create, :destory, :edit]
+  before_action :display_items, execpt:[:new, :create, :destroy, :edit]
   
   def index
   end
@@ -23,13 +23,16 @@ class ItemsController < ApplicationController
   end
 
   def update
-    item = Item.find(params[:id])
-    item.update(items_params) if item.user_id == current_user.id
+    @item = Item.find(params[:id])
+    @item.update(items_params) if @item.user_id == current_user.id
     redirect_to :root
   end
 
-  def destory
+  def destroy
+    @item = Item.find(params[:id])
+    @item.destroy if @item.user_id == current_user.id
   end
+
 
   def outer
     @outer__items = @items.where(category_id: "1")
