@@ -1,8 +1,13 @@
+.new{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 20px;
+}
 .sub__title{
   font-family: 'Sriracha', cursive;
   font-size: 40px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
   letter-spacing: 15px;
   margin: 0 auto;
   a{
@@ -12,14 +17,17 @@
 .container{
   width : 650px;
   margin: 10px auto;
+  font-family: $form-font;
+  color: $black;
+  @include clear-color;
+  border-radius: 5px;
+  box-shadow: 0 0 100px gray;
   .form{
     width: 400px;
-    height: 895px;
+    height: 800px;
     margin: 5px auto;
-    font-family: $form-font;
     .form-content{
       display: block;
-      font-family: $form-font;
       height: 45px;
       width: 375px;
       border: 1px solid $line-color;
@@ -27,7 +35,6 @@
       font-size: 25px;
     }
     .item-select{
-      color: $black;
       font-size: 20px;
       padding: 15px 0 2px;
       @include border-line;
@@ -40,7 +47,7 @@
 	    appearance: none;
       width: 80%;
       height: 50px;
-      background-color: $new__box-color;
+      background-color: $white;
       padding: 0 10px;
     }
     #preview{
@@ -48,7 +55,7 @@
       height: 152px;
       border:  1px dashed $line-color;
       margin: 0 auto;
-      background-color: $new__box-color;
+      background-color: $white;
       img{
         height: 150px;
         width: 150px;
@@ -60,7 +67,6 @@
       padding-top: 20px;
     }
     .item-price{
-      color: $black;
       font-size: 20px;
       padding-top: 15px;
       @include border-line;
@@ -76,7 +82,7 @@
         width: 43%;
         margin-left: 90px;
         margin-top: 8px;
-        background-color: $new__box-color;
+        background-color: $white;
         padding: 0 20px;
         font-size: 20px;
         border: 1px solid $line-color;
