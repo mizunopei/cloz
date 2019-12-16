@@ -55,7 +55,7 @@
               Green
           %li.color-box.rainbow
             = link_to other_color_items_path do
-              = fa_icon "square-o"  
+              = fa_icon "square-o"
               Other
 
     .icon
@@ -63,7 +63,7 @@
         = fa_icon "camera"
         post !
     .icon
-      = link_to users_show_path do
+      = link_to user_path(current_user.id) do
         = fa_icon "user"
         my-page
 
@@ -78,5 +78,5 @@
           = fa_icon "sign-in"
           sign-in
 
-    .trash-box 
+    .trash-box
       = fa_icon "trash"
