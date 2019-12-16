@@ -30,7 +30,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 #ユーザー用
 gem 'devise'
-gem 'devise-i18n' #日本語化devise
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 gem 'carrierwave'
