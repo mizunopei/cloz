@@ -1,7 +1,7 @@
 .button{
   border-radius: 5px;
   line-height: 45px;
-  font-family: $post-font;
+  font-family: $form-font;
   font-size: 20px;
   display: block;
   margin: 30px auto;
@@ -22,8 +22,8 @@
   .back__button{
     width: 50%;
     padding: auto 10px;
-    border: 1px solid  black;
-    color: black;
+    border: 1px solid  $black;
+    color: $black;
     text-align: center;
     background:  $new__box-color;
   }
