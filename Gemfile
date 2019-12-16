@@ -30,7 +30,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 #ユーザー用
 gem 'devise'
-gem 'devise-i18n' #日本語化devise
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 gem 'carrierwave'
@@ -38,6 +37,8 @@ gem "mini_magick"
 gem "font-awesome-rails"
 gem "active_hash"
 gem 'rails-i18n'
+gem "jquery-ui-rails"
+gem "pry-rails"
 
 gem 'kaminari' #ページネーション 
 # Use Capistrano for deployment

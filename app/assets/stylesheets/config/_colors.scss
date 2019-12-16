@@ -1,6 +1,6 @@
 $line-color: #9e9e9e;
 $black: #1f1f1f;
-$new__box-color: #f9f9fa;
+$white: #fff;
 
 
 @mixin border-line {
@@ -9,3 +9,11 @@ $new__box-color: #f9f9fa;
   border-image-slice: 1;
 }
 
+@mixin clear-color{
+  background-color: rgba( 255, 255, 255, 0.4);
+}
+
+body{
+  background-image: image-url("paper.jpg");
+  min-height: 100vh;
+}

@@ -1,7 +1,7 @@
 .button{
   border-radius: 5px;
   line-height: 45px;
-  font-family: $post-font;
+  font-family: $form-font;
   font-size: 20px;
   display: block;
   margin: 30px auto;
@@ -11,22 +11,23 @@
   .submit__button{
     width: 90%;
     border: 1px solid #478aa5;
+    background: #478aa5;
+    color: $white;
    
   }
   .submit__button:hover{
-    background: #478aa5;
-    color: white;
+    opacity: 0.8;
     font-weight: bold;
    
   }
   .back__button{
     width: 50%;
     padding: auto 10px;
-    border: 1px solid  black;
-    color: black;
+    border: 1px solid  gray;
+    color: $white;
     text-align: center;
-    background:  $new__box-color;
+    background:  gray;
   }
   .back__button:hover{
-    opacity: 0.7;
+    opacity: 0.9;
   }
