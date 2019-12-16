@@ -1,0 +1,52 @@
+.devise-box{
+  width: 330px;
+  background-color: rgba( 255, 255, 255, 0.5 );
+  height: 100%;
+  margin: 50px auto 0;
+  box-shadow: 0 0 200px gray;
+  border-radius: 5px;
+  .form-body{
+    margin: 20px auto;
+    text-align: center;
+    padding: 30px 0;
+    height: 100%;
+    font-family: $form-font;
+    color: $black;
+    a{
+      color: $black;
+      @include border-line;
+      line-height: 40px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    h2{
+      font-size: 25px;
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    form{
+      padding-bottom: 40px;
+      .field{
+        padding-top: 5px;
+      }
+    }
+      input{
+        padding: 10px;
+        border: 1px solid $line-color;
+        background-color: $white;
+      }
+    .actions{
+      padding-top: 20px;
+      input{
+        width: 90%;
+        border: 1px solid #478aa5;
+        background: #478aa5;
+        color: $white;
+        cursor: pointer;
+      }
+      input:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+}
