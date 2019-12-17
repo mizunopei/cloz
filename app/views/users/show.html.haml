@@ -11,6 +11,7 @@
           %th 今月のアイテム数
           %td
             = @this_month_items.length
+            = compare_num(@last_month_items.length, @this_month_items.length)
         %tr
           %th 今月の合計金額
           %td
