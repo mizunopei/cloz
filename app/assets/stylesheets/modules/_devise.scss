@@ -39,13 +39,13 @@
       padding-top: 20px;
       input{
         width: 90%;
-        border: 1px solid #478aa5;
-        background: #478aa5;
+        border: 1px solid $button-blue;
+        background: $button-blue;
         color: $white;
         cursor: pointer;
       }
       input:hover{
-        opacity: 0.8;
+        background: #498fab;
       }
     }
   }

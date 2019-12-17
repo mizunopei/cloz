@@ -10,13 +10,13 @@
   }
   .submit__button{
     width: 90%;
-    border: 1px solid #478aa5;
-    background: #478aa5;
+    border: 1px solid $button-blue;
+    background: $button-blue;
     color: $white;
    
   }
   .submit__button:hover{
-    opacity: 0.8;
+    background: #498fab;
     font-weight: bold;
    
   }
