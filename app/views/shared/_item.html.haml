@@ -1,6 +1,6 @@
 .items
   - items.each do |item|
-    .item{data:{item_id:"#{item.id}"}}
+    .item{"data-item_id":"#{item.id}","data-model_name": item.class.name.underscore, "data-update_url": item_sort_path(item)}
       .item__image
         %img{src: "#{item.image}"}
       .item__name
