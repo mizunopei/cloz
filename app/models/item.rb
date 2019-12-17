@@ -1,6 +1,9 @@
 class Item < ApplicationRecord
   mount_uploader :image, ImageUploader
 
+  include RankedModel
+  ranks :row_order
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :category
   belongs_to_active_hash :color

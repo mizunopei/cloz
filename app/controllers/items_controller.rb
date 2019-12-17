@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = Item.new(items_params)
+    @item = Item.new(item_params)
     if @item.save
       redirect_to :root
     else
@@ -23,14 +23,14 @@ class ItemsController < ApplicationController
   end
 
   def update
-    @item = Item.find(params[:id])
-    @item.update(items_params) if @item.user_id == current_user.id
+    item = Item.find(params[:id])
+    item.update(item_params) if item.user_id == current_user.id
     redirect_to :root
   end
 
   def destroy
-    @item = Item.find(params[:id])
-    @item.destroy if @item.user_id == current_user.id
+    item = Item.find(params[:id])
+    item.destroy if item.user_id == current_user.id
   end
 
 
@@ -82,13 +82,20 @@ class ItemsController < ApplicationController
     @other_color__items = @items.where(color_id: "7")
   end
 
+  def sort
+    # binding.pry
+    item = Item.find(params[:item_id])
+    item.update(item_params)
+    render body :nil
+  end
+
 private
-  def items_params
-    params.require(:item).permit(:name, :image, :category_id, :color_id, :price).merge(user_id: current_user.id)
+  def item_params
+    params.require(:item).permit(:name, :image, :category_id, :color_id, :price, :row_order_position).merge(user_id: current_user.id)
   end
 
   def display_items
-    @items = Item.where(user_id: current_user.id).page(params[:page]).per(8)
+    @items = Item.where(user_id: current_user.id).rank(:row_order)
   end
 
 end
