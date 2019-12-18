@@ -1,0 +1,29 @@
+.form
+  = form_with model: @item, local: true do |f|
+    = render "layouts/error-messages", model: @item
+    .item-select
+      name
+    = f.text_field :name, placeholder: "アイテム名", class: "form-content"
+
+    .item-select
+      image
+    = f.file_field :image, id: "item-image"
+    #preview
+      = image_tag(@item.image_url.to_s) if @item.image?
+
+    .item-select
+      Category
+    = f.collection_select :category_id, Category.all, :id, :name, {prompt: "---"}, class: "select-box"
+
+    .item-select
+      Color
+    = f.collection_select :color_id, Color.all, :id, :name,{prompt: "---"}, class: "select-box"
+
+    .price-box
+      .item-price
+        Price
+      = f.text_field :price, class:"item-price__box"
+
+    = f.submit :"Save!", class:"button submit__button"
+    = link_to root_path, class: "button back__button" do
+      Back
