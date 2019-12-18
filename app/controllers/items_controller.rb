@@ -83,7 +83,6 @@ class ItemsController < ApplicationController
   end
 
   def sort
-    # binding.pry
     item = Item.find(params[:item_id])
     item.update(item_params)
     render body :nil

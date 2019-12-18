@@ -1,7 +1,5 @@
 .wrapper
-  .sub__title
-    = link_to root_path do
-      \-- Cloz --
+  = render "shared/sub__title"
   .user__container
     .user__name
       = current_user.name + "さんのクローゼット事情"
@@ -25,7 +23,6 @@
           %th 合計金額
           %td
             = "¥" + @total_price.to_s(:delimited)
-    
 
     = link_to root_path, class: "button back__button" do
       Back
