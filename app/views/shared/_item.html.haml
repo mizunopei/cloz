@@ -2,7 +2,6 @@
   - items.each do |item|
     .item{"data-item_id":"#{item.id}","data-model_name": item.class.name.underscore, "data-update_url": item_sort_path(item)}
       .item__image
-        -# %img{src: "#{item.image}"}
         = image_tag(item.image.to_s) if item.image?
       .item__name
         = item.name
