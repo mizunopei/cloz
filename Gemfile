@@ -32,7 +32,7 @@ gem 'haml-rails'
 gem 'devise'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-gem 'carrierwave'
+gem 'carrierwave', '~> 1.3.1'
 gem "mini_magick"
 gem "font-awesome-rails"
 gem "active_hash"
@@ -40,7 +40,7 @@ gem 'rails-i18n'
 gem "jquery-ui-rails"
 gem "pry-rails"
 gem "ranked-model"
-gem "cloudinary"
+gem "cloudinary", "1.11.1"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
