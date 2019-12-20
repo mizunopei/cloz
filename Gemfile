@@ -40,6 +40,7 @@ gem 'rails-i18n'
 gem "jquery-ui-rails"
 gem "pry-rails"
 gem "ranked-model"
+gem "cloudinary"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
