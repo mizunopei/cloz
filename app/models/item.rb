@@ -8,9 +8,9 @@ class Item < ApplicationRecord
   belongs_to_active_hash :category
   belongs_to_active_hash :color
 
-  validates :name, presence: true
+  validates :name, presence: true, length:{maximum: 20}
   validates :image, presence: true
-  validates :price, presence: true
+  validates :price, presence: true, numericality: {only_integer: true, greater_than: 0}
   validates :category_id, presence: true
   validates :color_id, presence: true
 end
