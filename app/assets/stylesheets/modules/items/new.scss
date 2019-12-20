@@ -19,7 +19,7 @@
   box-shadow: 0 0 100px gray;
   .form{
     width: 400px;
-    height: 800px;
+    height: 880px;
     margin: 5px auto;
     .form-content{
       display: block;
@@ -115,5 +115,9 @@
 }
 .alert-warning{
   color :red;
+  display: inline;
 }
 
+.field_with_errors {
+  display: inline;
+}

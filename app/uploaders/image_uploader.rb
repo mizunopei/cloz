@@ -4,6 +4,7 @@ class ImageUploader < CarrierWave::Uploader::Base
    include CarrierWave::MiniMagick
    process resize_to_fit: [200, 200]
 
+   include Cloudinary::CarrierWave
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
