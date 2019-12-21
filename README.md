@@ -14,7 +14,10 @@
 ## 機能
 * 新規登録、ログイン、ログアウト
 * Itemの保存、閲覧、編集
+
 * カテゴリー、カラーごとの表示
+![deom](https://user-images.githubusercontent.com/55831482/71306349-50b8d580-2422-11ea-9f95-0848c799bad2.gif)
+
 * ドラックアンドドロップによる並び替え、削除機能
 ![demo](https://user-images.githubusercontent.com/55831482/71306276-91641f00-2421-11ea-82f4-8fb3db571b30.gif)
 * 金額、個数の合計値をマイページ上で表示（家計簿の役割）
