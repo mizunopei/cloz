@@ -1,5 +1,5 @@
 # Cloz
-![demo](https://user-images.githubusercontent.com/55831482/71305891-5fe95480-241d-11ea-9955-c3827fc1c1c8.gif)
+![demo]([![Image from Gyazo](https://i.gyazo.com/495b5bde531dddef06b662646ec41ef9.gif)](https://gyazo.com/495b5bde531dddef06b662646ec41ef9))
 ## 概要
   衣服や小物を管理するためのクローゼットアプリケーションです。
   家計簿の役割も担います。
