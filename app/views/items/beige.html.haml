@@ -3,3 +3,5 @@
   .flex__box
     = render "shared/left-bar"
     = render partial: "shared/item", locals:{items: @beige__items}
+    - breadcrumb :beige
+    = render "shared/breadcrumbs"
