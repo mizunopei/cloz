@@ -106,12 +106,15 @@
     font-family: $main-font;
     font-size: 100px;
     left: 80px;
-    bottom: 30px;
+    bottom: 25px;
     position: absolute;
       .fa{
         color: $black;
       }
     }
-  
+    .move-trash{
+      font-size: 150px;
+      transform: rotate(30deg);
+    }
 
 
