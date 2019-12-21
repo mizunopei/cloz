@@ -1,29 +1,64 @@
 crumb :root do
-  link "Cloz", root_path
+  link "Home", root_path
 end
 
+crumb :outer do
+  link "Outer", outer_items_path
+  parent :root
+end
 
-# crumb :projects do
-#   link "Projects", projects_path
-# end
+crumb :tops do
+  link "Tops", tops_items_path
+  parent :root
+end
 
-# crumb :project do |project|
-#   link project.name, project_path(project)
-#   parent :projects
-# end
+crumb :bottoms do
+  link "Bottoms", bottoms_items_path
+  parent :root
+end
 
-# crumb :project_issues do |project|
-#   link "Issues", project_issues_path(project)
-#   parent :project, project
-# end
+crumb :shoes do
+  link "Shoes", shoes_items_path
+  parent :root
+end
 
-# crumb :issue do |issue|
-#   link issue.title, issue_path(issue)
-#   parent :project_issues, issue.project
-# end
+crumb :goods do
+  link "Goods", goods_items_path
+  parent :root
+end
 
-# If you want to split your breadcrumbs configuration over multiple files, you
-# can create a folder named `config/breadcrumbs` and put your configuration
-# files there. All *.rb files (e.g. `frontend.rb` or `products.rb`) in that
-# folder are loaded and reloaded automatically when you change them, just like
-# this file (`config/breadcrumbs.rb`).
+crumb :black do
+  link "Black", black_items_path
+  parent :root
+end
+
+crumb :white do
+  link "White", white_items_path
+  parent :root
+end
+
+crumb :navy do
+  link "Navy", navy_items_path
+  parent :root
+end
+
+crumb :gray do
+  link "Gray", gray_items_path
+  parent :root
+end
+
+crumb :beige do
+  link "Beige", beige_items_path
+  parent :root
+end
+
+crumb :green do
+  link "Green", green_items_path
+  parent :root
+end
+
+crumb :other_color do
+  link "Other Color", other_color_items_path
+  parent :root
+end
+
