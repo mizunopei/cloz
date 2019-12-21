@@ -1,24 +1,29 @@
-# README
+# Cloz
+## 概要
+  衣服や小物を管理するためのクローゼットアプリケーションです。
+  家計簿の役割も担います。
+  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 制作背景
+* 衣服の管理に特化しているアプリケーションを欲しいと思ったためです。
+  * 同種の既存アプリケーションに比べ入力欄を少なくすることで、ユーザーの負担量を減らしました。
+  * また老若男女問わず使用して頂けるようなデザインや操作を心掛けました。
 
-Things you may want to cover:
 
-* Ruby version
+## 機能
+* 新規登録、ログイン、ログアウト
+* Itemの保存、閲覧、編集
+* カテゴリー、カラーごとの表示
+* ドラックアンドドロップによる並び替え、削除機能
+* 金額、個数の合計値をマイページ上で表示（家計簿の役割）
 
-* System dependencies
+## 使用技術
+* Haml
+* Sass
+* Ruby on Rails
+* jQuery
+* MySQL(開発環境)
+* PostgreSQL(本番環境)
+* Heroku
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
