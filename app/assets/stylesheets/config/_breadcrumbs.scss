@@ -1,0 +1,15 @@
+.breadcrumbs{
+  position: absolute;
+  bottom: 90px;
+  left: 260px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: $main-font;
+  a{
+    color: $black;
+    padding-right: 2px;
+  }
+  .current{
+    font-weight: bold;
+  }
+}

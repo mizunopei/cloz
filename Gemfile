@@ -41,6 +41,7 @@ gem "jquery-ui-rails"
 gem "pry-rails"
 gem "ranked-model"
 gem "cloudinary", "1.11.1"
+gem "gretel"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
