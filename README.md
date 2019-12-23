@@ -5,7 +5,7 @@
   購入した衣服などの個数や金額を保存する家計簿の役割も担います。
 
 ## リンク
-* https://cloz.herokuapp.com/
+* [link](https://cloz.herokuapp.com/){:target="_blank"}
 
 * テスト用アカウント
   * Email: test@test.com
@@ -47,6 +47,7 @@
 * MySQL(開発環境)
 * PostgreSQL(本番環境)
 * Heroku
+* Cloudinary(本番環境)
 
 
 ## ER図
