@@ -5,7 +5,7 @@
   購入した衣服などの個数や金額を保存する家計簿の役割も担います。
 
 ## リンク
-* [link](https://cloz.herokuapp.com/){:target="_blank"}
+* https://cloz.herokuapp.com/
 
 * テスト用アカウント
   * Email: test@test.com
