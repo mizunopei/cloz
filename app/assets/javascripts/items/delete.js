@@ -12,7 +12,6 @@ $(function(){
           var delete_item = ui.draggable[0];
           //idを取得。
           var delete_ID = ui.draggable.data("item_id");
-          console.log(delete_ID)
           var delete_url = "/items/" + delete_ID;
           $.ajax({
             url: delete_url,
