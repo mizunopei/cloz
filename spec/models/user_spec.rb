@@ -24,6 +24,10 @@ describe User do
       user.valid?
       expect(user.errors[:password]).to include("を入力してください")
     end
-
+    it "パスワードと確認が一致していないと登録できない" do
+      user = build(:user, password_confirmation: "")
+      user.valid?
+      expect(user.errors[:password_confirmation]).to include("とpasswordの入力が一致しません")
+    end
   end
 end
