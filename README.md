@@ -44,6 +44,7 @@
 * Sass(CSS)
 * Ruby on Rails
 * jQuery
+* jQuery UI
 * MySQL(開発環境)
 * PostgreSQL(本番環境)
 * Heroku
